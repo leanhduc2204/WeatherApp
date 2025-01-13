@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_KEY = "3c1e207ac0303f5e26855e053034e498"; // Thay YOUR_API_KEY bằng API key của bạn
-const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
+const API_KEY = process.env.PUBLIC_API_WEATHER_KEY; // Thay YOUR_API_KEY bằng API key của bạn
+const BASE_URL = process.env.PUBLIC_URL_WEATHER;
 
 export const fetchWeather = async (latitude, longitude) => {
   try {
